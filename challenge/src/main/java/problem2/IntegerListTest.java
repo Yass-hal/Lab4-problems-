@@ -40,6 +40,21 @@ public class IntegerListTest
             case 2:
                 list.print();
                 break;
+            case 3:
+                System.out.println("Provide the value of the element");
+                int element=scan.nextInt();
+                list.addElement(element);
+                break;
+            case 4:
+                System.out.println("Provide the value of the element of which the first occurrence will be deleted");
+                int elementToDelete=scan.nextInt();
+                list.removeFirst(elementToDelete);
+                break;
+            case 5:
+                System.out.println("Provide the value of the element of which all occurrences will be deleted");
+                int ele=scan.nextInt();
+                list.removeAll(ele);
+                break;
             default:
                 System.out.println("Sorry, invalid choice");
         }
@@ -54,6 +69,9 @@ public class IntegerListTest
         System.out.println("0: Quit");
         System.out.println("1: Create a new list (** do this first!! **)");
         System.out.println("2: Print the list");
+        System.out.println("3: Add an element");
+        System.out.println("4: Delete the first occurrence of an element");
+        System.out.println("5: Delete all occurrences of an element");
         System.out.print("\nEnter your choice: ");
     }
 }
