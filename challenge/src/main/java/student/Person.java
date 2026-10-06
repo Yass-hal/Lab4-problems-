@@ -17,5 +17,13 @@ public class Person {
 
         // add others
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
 }
 
